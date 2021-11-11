@@ -1,8 +1,6 @@
 #/bin/bash
 
-sudo mandb -t
-rm -rf /var/cache/man
-sudo mandb -c
+sudo apt-get remove -y --purge man-db
 
 echo '[INFO] Configuring lxd...'
 sudo apt-get -y install lxd
