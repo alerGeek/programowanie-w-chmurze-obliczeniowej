@@ -1,12 +1,23 @@
-sudo apt-get remove -y --purge man-db
-echo '[INFO] Configuring lxd...'
-sudo apt-get -y install lxd
-echo '[INFO] Finished configuring lxd.'
-echo '[INFO] Configuring lxc...'
-sudo apt-get update
-sudo apt-get -y install lxc-utils
-sudo apt-get -y install lxc-templates
-sudo apt-get -y install lxc
-sudo apt autoremove
-echo '[INFO] Finished configuring lxc.'
+if sudo apt-get -y install lxd; then
+    echo 'LXD zainstalowano pomyślnie'
+else
+    echo 'LXD rzuciło error'
+fi
 
+if sudo apt-get -y install lxc; then
+    echo 'LXD zainstalowano pomyślnie'
+else
+    echo 'LXD rzuciło error'
+fi
+
+if sudo apt-get -y install lxc-utils; then
+    echo 'LXD zainstalowano pomyślnie'
+else
+    echo 'LXD rzuciło error'
+fi
+
+if sudo apt-get -y install lxc-templates; then
+    echo 'LXD zainstalowano pomyślnie'
+else
+    echo 'LXD rzuciło error'
+fi
