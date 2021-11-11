@@ -9,9 +9,9 @@ Very your environment now:
 `ifconfig lxcbr0`{{execute}}
 
 # Configure  LXD
-`lxd init`{{execute}}
 `dpkg-reconfigure -p medium lxd`{{execute}}
 `apt install -y zfsutils-linux`{{execute}}
+`lxd init`{{execute}}
 `lxc launch ubuntu:16.04/i386 first_u`{{execute}}
 `lxc init ubuntu:16.04/i386 first_u`{{execute}}
 `lxc image list images:`{{execute}}
