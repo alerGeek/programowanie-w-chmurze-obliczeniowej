@@ -1,1 +1,1 @@
-sudo apt-get remove -y --purge man-db
+sudo apt-get update
