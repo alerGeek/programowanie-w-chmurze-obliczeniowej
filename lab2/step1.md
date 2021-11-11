@@ -12,13 +12,13 @@ Very your environment now:
 `lxd init`{{execute}}
 `apt install -y zfsutils-linux`{{execute}}
 Bridge: 
-IPv4  10.0.100.1
-Prefiksem  CIDR  24. 
-First address: 10.0.100.2
-Last address:10.0.100.254
-Maksymalna count DHCP: 100
-NAT: yes
-IPv6 default
+IPv4  10.0.100.1    
+Prefiksem  CIDR  24 
+First address: 10.0.100.2   
+Last address:10.0.100.254   
+Maksymalna count DHCP: 100  
+NAT: yes    
+IPv6 default    
 `dpkg-reconfigure -p medium lxd`{{execute}}
 `lxc launch ubuntu:16.04/i386 first_u`{{execute}}
 `lxc init ubuntu:16.04/i386 first_u`{{execute}}
