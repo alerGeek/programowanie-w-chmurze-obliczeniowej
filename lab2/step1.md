@@ -11,7 +11,7 @@ Very your environment now:
 # Configure  LXD
 `lxd init`{{execute}}
 `dpkg-reconfigure -p medium lxd`{{execute}}
-`apt install zfsutils-linux`{{execute}}
+`apt install -y zfsutils-linux`{{execute}}
 `lxc launch ubuntu:16.04/i386 first_u`{{execute}}
 `lxc init ubuntu:16.04/i386 first_u`{{execute}}
 `lxc image list images:`{{execute}}
