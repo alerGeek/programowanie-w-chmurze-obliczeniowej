@@ -21,6 +21,13 @@ IPv6 default
 
 `apt install -y zfsutils-linux`{{execute}}
 `lxd init`{{execute}}
+Name of the storage backend to use (dir or zfs): zfs
+Create a new ZFS pool (yes/no)? yes
+Name of the new ZFS pool: lxd
+Would you like to use an existing block device (yes/no)? no
+Size in GB of the new loop device (1GB minimum): 2
+Would you like LXD to be available over the network (yes/no)? no 
+LXD has been successfully configured.
 
 `lxc launch ubuntu:16.04/i386 first_u`{{execute}}
 `lxc init ubuntu:16.04/i386 first_u`{{execute}}
