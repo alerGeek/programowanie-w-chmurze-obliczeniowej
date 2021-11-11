@@ -1,3 +1,4 @@
+sudo apt-get remove -y --purge man-db
 echo '[INFO] Configuring lxd...'
 sudo apt-get -y install lxd
 echo '[INFO] Finished configuring lxd.'
