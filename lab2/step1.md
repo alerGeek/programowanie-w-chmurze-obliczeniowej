@@ -9,8 +9,7 @@ Very your environment now:
 `ifconfig lxcbr0`{{execute}}
 
 # Configure  LXD
-`lxd init`{{execute}}
-`apt install -y zfsutils-linux`{{execute}}
+`dpkg-reconfigure -p medium lxd`{{execute}}
 Bridge: 
 IPv4  10.0.100.1    
 Prefiksem  CIDR  24 
@@ -19,7 +18,10 @@ Last address:10.0.100.254
 Maksymalna count DHCP: 100  
 NAT: yes    
 IPv6 default    
-`dpkg-reconfigure -p medium lxd`{{execute}}
+
+`apt install -y zfsutils-linux`{{execute}}
+`lxd init`{{execute}}
+
 `lxc launch ubuntu:16.04/i386 first_u`{{execute}}
 `lxc init ubuntu:16.04/i386 first_u`{{execute}}
 `lxc image list images:`{{execute}}
