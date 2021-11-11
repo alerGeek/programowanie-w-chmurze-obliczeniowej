@@ -1,8 +1,11 @@
 #/bin/bash
 
-apt-get update
 echo '[INFO] Configuring lxc...'
-apt-get -y install lxc lxc-utils lxc-templates
+apt-get update
+apt-get -y install lxc
+apt-get -y install lxc-utils
+apt-get -y install lxc-templates
+
 echo '[INFO] Finished configuring lxc.'
 
 echo '[INFO] Configuring lxd...'
