@@ -1,5 +1,3 @@
-#/bin/bash
-
 sudo apt-get remove -y --purge man-db
 
 echo '[INFO] Configuring lxd...'
