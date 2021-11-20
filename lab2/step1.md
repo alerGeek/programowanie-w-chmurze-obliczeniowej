@@ -33,8 +33,8 @@ Size in GB of the new loop device (1GB minimum): 2
 Would you like LXD to be available over the network (yes/no)? no 
 LXD has been successfully configured.
 
-`lxc launch ubuntu:16.04/i386 first_u`{{execute}}
-`lxc init ubuntu:16.04/i386 first_u`{{execute}}
+`lxc launch ubuntu:16.04/i386 first-u`{{execute}}
+`lxc init ubuntu:16.04/i386 first-u`{{execute}}
 `lxc image list images:`{{execute}}
 `lxc image list ubuntu:`{{execute}}
 `lxc list`{{execute}}
