@@ -4,15 +4,11 @@ This is the stahe for preparing your environment.
 For using lxc on your ubuntu system, it is necessary to download it first.
 Here's a single line of runnable code.
 
-Very your environment now:
-`lxc-checkconfig`{{execute}}
-`ifconfig lxcbr0`{{execute}}
-
 # Configure  LXD
 `dpkg-reconfigure -p medium lxd`{{execute}}
-Bridge: 
-IPv4  10.0.100.1    
-Prefiksem  CIDR  24 
+Bridge:
+IPv4:  10.0.100.1    
+Prefiks: 24 
 First address: 10.0.100.2   
 Last address:10.0.100.254   
 Maksymalna count DHCP: 100  
@@ -38,3 +34,8 @@ LXD has been successfully configured.
 `lxc info <nazwa kontenera>`{{execute}}
 `lxc start <nazwa kontenera>`{{execute}}
 `lxc stop <nazwa kontenera>`{{execute}}
+
+# Konkretne komendy z nazwą kontenera:
+`lxc info first-u`{{execute}}
+`lxc start first-u`{{execute}}
+`lxc stop first-u`{{execute}}
