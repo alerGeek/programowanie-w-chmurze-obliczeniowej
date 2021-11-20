@@ -17,3 +17,10 @@
 `lxc image alias remove xenial/amd64`{{execute}}
 
 `lxc launch local:first_ubuntu test3`{{execute}}
+`lxc list -c ns test3`{{execute}}
+`lxc remove test3 --force`{{execute}}
+`lxc image list local:`{{execute}}
+
+`lxc init ubuntu:16:04/i386 test1`{{execute}}
+`lxc config set test1 limits.cpu=2`{{execute}}
+`lxc config set test1 limits.memory=1BG:`{{execute}}
