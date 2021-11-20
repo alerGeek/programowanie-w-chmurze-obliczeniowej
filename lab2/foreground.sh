@@ -1,6 +1,4 @@
-echo "Waiting to complete"
-
-while [ ! -f /opt/.backgroundfinished ] ; do sleep 2; done; echo "Done"
+apt-get update
 
 lxc-checkconfig
 ifconfig lxcbr0
