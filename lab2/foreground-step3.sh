@@ -22,7 +22,7 @@ echo ""
 
 lxc image alias delete 16.04
 lxc image alias delete 16.04/amd64
-lxc image alias delete base_ubuntu
+lxc image alias delete base-ubuntu
 lxc image alias delete x
 lxc image alias delete x/amd64
 lxc image alias delete xenial xenial/amd64
