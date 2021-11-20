@@ -23,7 +23,6 @@ Maksymalna count DHCP: 100
 NAT: yes    
 IPv6 default    
 
-`apt install -y zfsutils-linux`{{execute}}
 `lxd init`{{execute}}
 Name of the storage backend to use (dir or zfs): zfs
 Create a new ZFS pool (yes/no)? yes

@@ -24,3 +24,8 @@
 `lxc init ubuntu:16:04/i386 test1`{{execute}}
 `lxc config set test1 limits.cpu=2`{{execute}}
 `lxc config set test1 limits.memory=1GB`{{execute}}
+`lxc config set test1 limits.cpu=2`{{execute}}
+`lxc config set test1 limits.memory=50kB`{{execute}}
+
+`lxc network`{{execute}}
+`lxc config device add test1 eth0 nic name=eth0 nictype=bridged parent=lxdbr0`{{execute}}
