@@ -13,3 +13,5 @@ lxc info test1 | grep -iE 'memory|bytes'
 
 lxc network
 lxc config device add test1 eth0 nic name=eth0 nictype=bridged parent=lxdbr0
+
+# lxd init --network-address 10.0.100.1 --storage-backend zfs --storage-create-loop 2 --storage-pool lxd
