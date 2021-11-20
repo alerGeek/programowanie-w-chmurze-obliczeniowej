@@ -23,4 +23,4 @@
 
 `lxc init ubuntu:16:04/i386 test1`{{execute}}
 `lxc config set test1 limits.cpu=2`{{execute}}
-`lxc config set test1 limits.memory=1BG:`{{execute}}
+`lxc config set test1 limits.memory=1GB:`{{execute}}
