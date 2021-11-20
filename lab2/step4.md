@@ -8,13 +8,13 @@
 `lxc image alias list | grep '|' | awk -F ' ' '{print $2}' | grep -E '^[^base-ubuntu]' | xargs lxc image alias remove`{{execute}}
 `lxc image alias delete  x/amd64 xenial xenial/amd64`{{execute}}
 
-`lxc image alias remove 16.04`{{execute}}
-`lxc image alias remove 16.04/amd64`{{execute}}
-`lxc image alias remove first_ubuntu`{{execute}}
-`lxc image alias remove x`{{execute}}
-`lxc image alias remove x/amd64`{{execute}}
-`lxc image alias remove xenial xenial/amd64`{{execute}}
-`lxc image alias remove xenial/amd64`{{execute}}
+`lxc image alias delete 16.04`{{execute}}
+`lxc image alias delete 16.04/amd64`{{execute}}
+`lxc image alias delete first_ubuntu`{{execute}}
+`lxc image alias delete x`{{execute}}
+`lxc image alias delete x/amd64`{{execute}}
+`lxc image alias delete xenial xenial/amd64`{{execute}}
+`lxc image alias delete xenial/amd64`{{execute}}
 
 `lxc launch local:first_ubuntu test3`{{execute}}
 `lxc list -c ns test3`{{execute}}
