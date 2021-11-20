@@ -1,7 +1,7 @@
 # Exercises:
 
-lxc image list fedora:
-lxc image list images: | grep fedora
-lxc remote list
-lxc image list images:fedora | grep 64
-lxc launch images:fedora/35 first
+`lxc image list fedora:`{{execute}}
+`lxc image list images: | grep fedora`{{execute}}
+`lxc remote list`{{execute}}
+`lxc image list images:fedora | grep 64`{{execute}}
+`lxc launch images:fedora/35 first`{{execute}}
