@@ -1,7 +1,9 @@
 #/bin/bash
 
 lxc init ubuntu:16.04 test1
+lxc start test1
 lxc config show test1
+lxc info test1
 
 lxc config set test1 limits.cpu 2
 lxc config set test1 limits.memory 1GB
