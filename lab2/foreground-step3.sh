@@ -19,6 +19,7 @@ lxc image alias list
 lxc image alias list | grep '|' | awk -F ' ' '{print $2}' | grep -E '^[^base-ubuntu]' | xargs lxc image alias remove
 lxc image alias delete  x/amd64 xenial xenial/amd64
 
+lxc image alias list
 lxc image alias delete 16.04
 lxc image alias delete 16.04/amd64
 lxc image alias delete base-ubuntu

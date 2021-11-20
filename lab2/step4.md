@@ -6,7 +6,7 @@
 `lxc config set test1 limits.cpu 2`{{execute}}
 `lxc config set test1 limits.memory 50kB`{{execute}}
 `lxc config show test1 | grep -iE 'memory|cpu'`{{execute}}
-`lxc info test1 | grep -iE 'memory|bytes`{{execute}}
+`lxc info test1 | grep -iE 'memory|bytes'`{{execute}}
 
 
 `lxc network`{{execute}}

@@ -12,6 +12,7 @@ lxc config show test1 | grep -iE 'memory|cpu'
 lxc info test1 | grep -iE 'memory|bytes'
 
 lxc config set test1 limits.cpu 2
+
 lxc config set test1 limits.memory 50kB
 
 lxc config show test1 | grep -iE 'memory|cpu'
