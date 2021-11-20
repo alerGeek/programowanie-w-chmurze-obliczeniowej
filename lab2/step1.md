@@ -4,14 +4,6 @@ This is the stahe for preparing your environment.
 For using lxc on your ubuntu system, it is necessary to download it first.
 Here's a single line of runnable code.
 
-# Very your environment now:
-`lxc-checkconfig`{{execute}}
-`ifconfig lxcbr0`{{execute}}
-
-`cat /etc/os-release`{{execute}}
-`uname -r`{{execute}}
-`lxc-checkconfig`{{execute}}
-
 # Configure  LXD
 `dpkg-reconfigure -p medium lxd`{{execute}}
 Bridge:
