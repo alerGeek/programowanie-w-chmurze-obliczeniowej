@@ -30,9 +30,6 @@ LXD has been successfully configured.
 `lxc image list ubuntu:`{{execute}}
 `lxc list`{{execute}}
 `lxc list --fast`{{execute}}
-`lxc info <nazwa kontenera>`{{execute}}
-`lxc start <nazwa kontenera>`{{execute}}
-`lxc stop <nazwa kontenera>`{{execute}}
 
 # Konkretne komendy z nazwą kontenera:
 `lxc info first-u`{{execute}}
