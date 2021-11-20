@@ -11,15 +11,18 @@
       },
       {
         "title": "Step 2",
-        "text": "step2.md"
+        "text": "step2.md",
+        "code": "foreground-step2.sh"
       },
       {
         "title": "Step 3",
-        "text": "step3.md"
+        "text": "step3.md",
+        "code": "foreground-step3.sh"
       },
       {
         "title": "Step 4",
-        "text": "step4.md"
+        "text": "step4.md",
+        "code": "foreground-step4.sh"
       },
       {
         "title": "Step 5",
