@@ -16,4 +16,5 @@
  
 # Start create and run containers
 `docker run -it -d ubuntu`{{execute}}
-`docker run -it ubuntu /bin/bash -c  "for i in {1..10}; do echo 'Hello world'; done"`{{execute}}
+`docker run -it --name ubuntu-for ubuntu /bin/bash -c  "for i in {1..10}; do echo 'Hello world'; done"`{{execute}}
+`docker run -it --name ubuntu-while ubuntu /bin/bash -c  "while true; do echo 'Hello world'; sleep 1; done"`{{execute}}
