@@ -6,4 +6,4 @@
 systemctl start docker
 docker version
 
-docker system prune --all
+docker image prune --all
