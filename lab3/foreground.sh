@@ -1,9 +1,9 @@
 #/bin/bash
 
-`apt-get update`{{execute}}
-`apt-get install docker`{{execute}}
+apt-get update
+apt-get install docker
 
-`systemctl start docker`{{execute}}
-`docker version`{{execute}}
+systemctl start docker
+docker version
 
-`docker system prune --all`{{execute}}
+docker system prune --all
